@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>JavaScript-Beispiel</title>
+<script src="script.js">
+</script>
+</head>
+<body onload="startTime()">
+<h1 id="date"></h1>
+
+
+  <img src= "images/bild1.png" id="bild1" height="30%"
+  onmouseover="austauschen (this.id, 'images/bild4.png')"
+  onmouseout="austauschen (this.id, 'images/bild1.png')" >
+  <img src= "images/bild2.png" id="bild2" height="30%"
+  onmouseover="austauschen (this.id, 'images/bild5.png')"
+  onmouseout="austauschen (this.id, 'images/bild2.png')" >
+  <img src= "images/bild3.png" id="bild3" height="30%"
+  onmouseover="austauschen (this.id, 'images/bild6.png')"
+  onmouseout="austauschen (this.id, 'images/bild3.png')" >
+
+
+<form action="" onsubmit="return pruefen()">
+<label for="nachname">Name: </label> <br>
+<input type="text" name="nachname" id="nachname" size="20" maxlength="30"> <br>
+<label for="email">Emailadresse: </label> <br>
+<input type="text" name="email" id="email" size="20" maxlength="30"> <br>
+<input type="submit" value="Absenden">
+</form>
+
+</body>
+</html>
