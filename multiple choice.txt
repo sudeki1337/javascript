@@ -1,0 +1,60 @@
+5. Aufgabe:
+Wie vergleichen Sie, ob der in der Variablen zahl gespeicherte Wert gleich 5 ist?
+[x]  if (zahl == 5)
+[]  if (zahl = 5)
+[]  if (zahl eq 5)
+[]  if (zahl <> 5)
+6. Aufgabe:
+Wie wählen Sie das erste Element mit der Klasse wichtig aus?
+[]  document.getElementByID ("wichtig");
+[x]  document.querySelector(".wichtig");
+[]  document.querySelectorAll("wichtig");
+[]  document.getElement(wichtig);
+7. Aufgabe:
+Nehmen wir an, Sie haben ein Array mit Namen bilder definiert. Wie können Sie dann auf das erste Element zugreifen?
+[]  über bilder.first
+[]  mithilfe von bilder[1]
+[]  über bilder(1)
+[x]  mit bilder[0]
+8. Aufgabe:
+Durch welchen Code wird eine Schleife definiert, die genau 5-mal ausgeführt wird?
+[x]  mit for (var i = 1; i <= 5; i++) { }
+[]  mit for (var i = 1; i < 5; i++) { }
+[]  mit for (var i = 1, i <= 5, i++) { }
+[]  über for (var i = 1, j < 5, j++) { }
+9. Aufgabe:
+Was ist keine korrekte Art, eine Funktion mit dem Namen ausgabe aufzurufen?
+[]  <a href="#" onclick="ausgabe()"> …</a>
+[]  <script>ausgabe();</script>
+[x]  <script>ausgabe;</script>
+[]  <a href="javascript:ausgabe()"> …</a>
+10. Aufgabe:
+Welche der folgenden Angaben ist kein Eventhandler?
+[]  onclick
+[]  onsubmit
+[x]  onscript
+[]  onload
+11. Aufgabe:
+Sie haben in Ihrem Dokument ein Element mit dem Attribut id="besonders" definiert. Wie können Sie ihm einen Text zuweisen?
+[]  document.getElementById("besonders").innerHTML("anderer Text");
+[]  document.getElementById.besonders.innerHTML(anderer Text);
+[x]  document.getElementById("besonders").innerHTML = "anderer Text";
+[]  document.getElementById("besonders").InnerHTML = "anderer Text";
+12. Aufgabe:
+Was ergibt 27 % 2?
+[]  13.5
+[]  13,5
+[x]  1
+[]  3
+13. Aufgabe:
+Wie können Sie den vom Benutzer eingegebenen Inhalt eines Formularelements (Textfeld mit input type="text") auslesen?
+[x]  mithilfe von value
+[]  über string
+[]  mit return
+[]  mithilfe von text
+14. Aufgabe:
+Angenommen, es ist gerade der 12.4.2019. Was liefert dann ein Aufruf von var datum = new Date(); alert(datum.getMonth())?
+[]  April
+[]  Apr
+[x]  3
+[]  4
