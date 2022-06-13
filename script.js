@@ -1,41 +1,42 @@
-var a = new Date()
-var day = a.getDate();
-var month = a.getMonth() +1;
-var year = a.getFullYear();
-
 function startTime() {
-  var a = new Date()
-  var day = a.getDate();
-  var month = a.getMonth() +1;
-  var year = a.getFullYear();
-var h = a.getHours();
-var m = a.getMinutes();
-var s = a.getSeconds();
-m = checkTime(m);
-s = checkTime(s);
-document.getElementById("date") .innerHTML = "Datum: " + day + "." + month + "." + year + "   " + "Uhrzeit"+" " + h +":" + m + ":" + s ;
+  var oDate = new Date()
+  var iDay = oDate.getDate();
+  var iMonth = oDate.getMonth() + 1;
+  var iYear = oDate.getFullYear();
+  var iHours = oDate.getHours();
+  var iMinutes = oDate.getMinutes();
+  var iSeconds = oDate.getSeconds();
+  iMinutes = checkTime(iMinutes);
+  iSeconds = checkTime(iSeconds);
+  document.getElementById("date").innerHTML = "Datum: " + iDay + "." + iMonth + "." + iYear + "   " + "Uhrzeit" + " " + iHours + ":" + iMinutes + ":" + iSeconds;
 
-setTimeout(startTime, 1000); }
+  setTimeout(startTime, 1000);
+}
 
 
 function checkTime(i) {
-  if (i < 10) {i = "0" + i};
+  if (i < 10) {
+    i = "0" + i
+  };
   return i;
 }
-function austauschen (id, quelle) {document.getElementById(id) .src = quelle; }
 
-  function pruefen () {
-    var nachname = document.getElementById("nachname");
-    var email = document.getElementById("email");
+function austauschen(id, quelle) {
+  document.getElementById(id).src = quelle;
+}
 
-    if (nachname.value == "") {
-      alert ("Bitte geben Sie Ihren Nachnamen ein!");
-  nachname.focus ();
-  return false;
+function pruefen() {
+  var nachname = document.getElementById("nachname");
+  var email = document.getElementById("email");
+
+  if (nachname.value === "") {
+    alert("Bitte geben Sie Ihren Nachnamen ein!");
+    nachname.focus();
+    return false;
   }
-    if (email.value == ""){
-    alert ("Bitte geben Sie Ihre Emailadresse ein!");
-  email.focus ();
-  return false;
+  if (email.value === "") {
+    alert("Bitte geben Sie Ihre Emailadresse ein!");
+    email.focus();
+    return false;
   }
-  }
+}
